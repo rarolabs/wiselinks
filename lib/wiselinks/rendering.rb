@@ -6,8 +6,6 @@ module Wiselinks
       base.alias_method :render, :render_with_wiselinks
     end
 
-  protected
-
     def render_with_wiselinks(*args, &block)
       options = _normalize_args(*args)
 
