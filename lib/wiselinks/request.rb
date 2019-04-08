@@ -1,7 +1,6 @@
 module Wiselinks
   module Request
     def self.included(base)
-      byebug
       base.send :alias_method, :referer_without_wiselinks, :referer
       base.send :alias_method, :referer, :referer_with_wiselinks
 
